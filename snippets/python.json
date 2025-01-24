@@ -1,0 +1,14 @@
+{
+  "UNI CS Header": {
+    "prefix": ["csh"],
+    "body": ["\"\"\"","File: $TM_FILENAME", "Author: Alex Greving", "Description: $0", "\"\"\""],
+    "description": "Creates a header used by the UNI CS department.",
+    "scope": "python"
+  },
+  "Block Comment": {
+    "prefix": ["bc", "block-comment"],
+    "body": ["\"\"\"", "$0", "\"\"\""],
+    "description": "Creates a python block comment.",
+    "scope": "python"
+  }
+}
