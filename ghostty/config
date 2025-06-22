@@ -1,0 +1,5 @@
+font-family = "JetBrainsMono NFM Regular"
+auto-update = "check" 
+title = " "
+mouse-hide-while-typing = true
+theme = catppuccin-macchiato.conf
