@@ -102,10 +102,11 @@ vim.g.have_nerd_font = true
 vim.o.number = true
 -- You can also add relative line numbers, to help with jumping.
 --  Experiment for yourself to see if you like it!
-vim.opt.relativenumber = true
+vim.o.relativenumber = true
 
--- Enable mouse mode, can be useful for resizing splits for example!
- vim.o.relativenumber = true
+-- Disable the mouse
+vim.o.mouse = ''
+vim.o.mousescroll = 'ver:0,hor:0'
 -- Don't show the mode, since it's already in the status line
 vim.o.showmode = false
 
@@ -684,6 +685,9 @@ require('lazy').setup({
         -- ts_ls = {},
         --
 
+        luau_lsp = {
+          cmd = { 'luau-lsp', 'lsp', '--definitions=nice-clock.d.luau' },
+        },
         lua_ls = {
           -- cmd = { ... },
           -- filetypes = { ... },
@@ -720,7 +724,6 @@ require('lazy').setup({
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
-      require('lspconfig')['racket_langserver'].setup {}
       require('mason-lspconfig').setup {
         ensure_installed = {}, -- explicitly set to an empty table (Kickstart populates installs via mason-tool-installer)
         automatic_installation = false,
