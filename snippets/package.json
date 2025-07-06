@@ -9,6 +9,12 @@
                 "language": "python",
                 "path": "./python.json"
             }
+        ],
+        "snippets": [
+            {
+                "language": "zig",
+                "path": "./zig.json"
+            }
         ]
     }
 }
